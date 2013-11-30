@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="talPor Solutions" />
+
+    <title>DevLabs USB - Tarea 3</title>
+
+    <link href="//fonts.googleapis.com/css?family=Ubuntu|Open+Sans" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" media="all" href="screen.css" />
+  </head>
+  <body>
+
+    <header>
+      <h1>DevLabs__USB</h1>
+      <h2>Tarea 3</h2>
+    </header>
+
+    <section id="explanation">
+      <div>
+
+        <p>
+          Como parte práctica de esta tarea, tendrás que seguir los
+          siguientes pasos:
+        </p>
+
+        <ol start="0">
+          <li>Igual que en la tarea 1, crea un archivo html con las respuestas a las preguntas de esta tarea. Coloca este archivo en ~/public_html/tarea2/</li>
+          <li>
+            Instala nginx en tu computador
+          </li>
+          <li>
+			Crea un archivo de configuración para un nuevo virtual host. Configura dicho virtual host para que sirva los archivos en ~/
+			public_html/ utilizando el hostname tarea2.talpor.com
+          </li>
+          <li>
+            Crea una página web que muestre tus respuestas a las preguntas teóricas presentadas
+			al final de este correo. Cada respuesta debe presentarse en un elemento separado cuyo
+			contenido debe ser cargado usando AJAX
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+    <section id="questions">
+      <article>
+        <h3>Preguntas</h3>
+      </article>
+      <article id="q1">
+        <h3>
+          1. ¿Qué problema resuelven las herramientas virtualenv y RVM (o rbenv)?
+			 ¿Para qué lenguaje se utiliza cada una?
+        </h3>
+        <div class="answer">
+          Las herramientas para la creación de ambientes virtuales, permiten la 
+		  creaci&oacute;n de ambientes adaptados a un cierto proyecto, todo dentro
+		  de una misma computadora. Esto permite probar proyectos con distintas
+		  liberias, versiones de frameworks, etc. sin alterar el proyecto original.
+ 		  En caso de Python se utiliza la herramienta virtualenv, y para Ruby RMV.
+        </div>
+      </article>
+      <article id="q2">
+        <h3>
+          2. ¿Qué framework piensas usar?
+        </h3>
+        <div class="answer">
+          Django.
+        </div>
+      </article>
+      <article id="q3">
+        <h3>
+          3. ¿Qué patrón de diseño utiliza ese framework?
+        </h3>
+        <div class="answer">
+          Utiliza el patron MTV, o , Model - Template - View. Cuando uno solicita
+		  un URL, este se envía a una vista. La vista llama al Modelo y prepara
+		  los datos de salida. Estos son enviados a una plantilla y se envía como
+		  respuesta.
+        </div>
+      </article>
+      <article id="q4">
+        <h3>
+          4. En el framework seleccionado, ¿cómo se crea la relación entre las
+			 tablas de la base de datos y las clases definidas?
+        </h3>
+        <div class="answer">
+		  En Django se definen modelos para poder acceder a las tablas de la base
+		  de datos. Normalmente es un modelo por cada tabla que se quiere consultar,
+		  definiendo todas las consultas que se quieran hacer en la tabla relacionada
+		  para que las vistas soliciten la información necesaria.
+        </div>
+      </article>
+      <article id="q5">
+        <h3>
+          5. ¿Para que se utilizan PIP y Bundler?
+        </h3>
+        <div class="answer">
+		  PIP y Bundler son herramientas para el manejo de packetes escritos en
+		  Python y Django respectivamente. Estos manejadores facilitan la
+		  instalaci&oacute;n, manejo y actualizaciones de paquetes, bibliotecas,
+		  y programas que facilitan la programaci&oacute;n en dichos lenguajes.
+        </div>
+      </article>
+      <article id="q5">
+        <h3>
+          5. ¿Qué es un Requirements file y un Gemfile?
+        </h3>
+        <div class="answer">
+		  Dichos archivos describen una precedencia, que los paquetes que estan
+		  escritos dentro del archivo, deben tener prioridad a la hora de resolver
+		  las dependencias de un proyecto.
+        </div>
+      </article>
+
+    </section>
+
+    <footer>
+      <p>Contacto: <a href="mailto:devlabs-usb@talpor.com">devlabs-usb@talpor.com</a></p>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45571408-1', 'devlabs-usb.github.io');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
